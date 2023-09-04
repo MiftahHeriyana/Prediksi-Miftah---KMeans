@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Home Page <br/></h2>
+<p>Welcome User {{ username }}!</p>
+<br/><img src="{{ url_for('static', filename='loan.jpg') }}" width="1000px" height="600px" class="center"/>
+{% endblock %}

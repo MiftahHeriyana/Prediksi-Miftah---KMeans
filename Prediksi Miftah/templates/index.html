@@ -1,0 +1,246 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Muhamad Nauval Azhar">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="This is a login page template based on Bootstrap 5">
+	<title>Package Delivery Prediction Application</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-sm-center h-100">
+				<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+					<div class="card shadow-lg">
+						<div class="card-body p-5">
+							<h1 class="fs-4 card-title fw-bold mb-4">Package Delivery Prediction</h1>
+							<form action="\get_prediction" method="POST" class="needs-validation" novalidate="" autocomplete="off">
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="email">Pengirim</label>
+									<input list="brow" id="pengirim" name="pengirim" class="form-control">
+										<datalist id="brow">
+											<option value="001-makeupbeautyhouse3">
+											<option value="002-1920 PHOTOCROMIC">
+											<option value="003-ABILENE STORE">
+											<option value="004-Advan Official Store">
+											<option value="005-ADVANCE.ANDINI">
+											<option value="006-ADVANCEDIGITAL">
+											<option value="007-aidahijabers">
+											<option value="008-Akusara fashion">
+											<option value="009-akusara fashionable">
+											<option value="010-ALFA_BATIK">
+											<option value="011-Arrazaqu collection">
+											<option value="012-ARTANG.ID">
+											<option value="013-ayahikhsan123 ">
+											<option value="014-azzahst0r3">
+											<option value="015-Banca52">
+											<option value="016-BARAKAHSTORE99">
+											<option value="017-BARBERSUPPLY INDO WAHL">
+											<option value="018-basmala_shop">
+											<option value="019-BERKAHI SHOP">
+											<option value="020-BEST GIFTS">
+											<option value="021-Beutyfashion28">
+											<option value="022-Bless StoreID">
+											<option value="023-Bsclothing">
+											<option value="024-Chaya Jewel ID">
+											<option value="025-cincaishop97">
+											<option value="026-CingkunekBabyKids">
+											<option value="027-cokilek store">
+											<option value="028-COMFY WEAR">
+											<option value="029-Cpai Gadgets">
+											<option value="030-DIMSSCO">
+											<option value="031-DIMSSCO">
+											<option value="032-Doferin">
+											<option value="033-Dojo Buku">
+											<option value="034-Dungkan Muslim Store">
+											<option value="035-Dzikricollection">
+											<option value="036-EIGHTANCY STORE">
+											<option value="037-ellenoirclothing">
+											<option value="038-emil2435">
+											<option value="039-Emscent">
+											<option value="040-emscent id official shop">
+											<option value="041-En Ligne Official Shop">
+											<option value="042-ERA JAYA 88">
+											<option value="043-eyewer good">
+											<option value="044-Faqih Computer">
+											<option value="045-FLIMTY FIBER SHOPPING">
+											<option value="046-Gadget Etalase">
+											<option value="047-Galeri Express">
+											<option value="048-Galeri Rumahku">
+											<option value="049-gpa_autoaccesories">
+											<option value="050-GRACIAS LABEL">
+											<option value="051-Haagen Petshop">
+											<option value="052-Hanadora Official Shop">
+											<option value="053-Healthy Grocery">
+											<option value="054-imamamaulana543">
+											<option value="055-JAKARTA TRUSTORE">
+											<option value="056-Jeans Fashion Kidz">
+											<option value="057-Jeans Store">
+											<option value="058-Jedae Mart">
+											<option value="059-JSM motor">
+											<option value="060-kazhilla flowers">
+											<option value="061-KIDSPRINCESS">
+											<option value="062-KONANG STORE">
+											<option value="063-LetYeah Official Shop">
+											<option value="064-Loa Studios">
+											<option value="065-Lunaci Official Shop">
+											<option value="066-maiva collection">
+											<option value="067-Makadam Adventure Mates">
+											<option value="068-Matei_ID">
+											<option value="069-MATOYA.ID">
+											<option value="070-MAVIA FASHON">
+											<option value="071-MEN JEANS">
+											<option value="072-Miabelle Official Shop">
+											<option value="073-MitraMall84">
+											<option value="074-nabila01_collection">
+											<option value="075-Naturalens Official Shop">
+											<option value="076-Nawasana Official Store">
+											<option value="077-Nice Bike">
+											<option value="078-Niciashop">
+											<option value="079-Nola Muslim Wear">
+											<option value="080-OfraStore">
+											<option value="081-Olshop Ayu novita">
+											<option value="082-OpalsKitchen">
+											<option value="083-Otobi Auto Care">
+											<option value="084-Ozi jeans">
+											<option value="085-pinponbabyshop">
+											<option value="086-PT ASTRA SEDAYA FINANCE">
+											<option value="087-Queen Salfa">
+											<option value="088-Rahma collection id">
+											<option value="089-RESTU COLLETION">
+											<option value="090-Rocket Store Jakarta">
+											<option value="091-Roegan Official Shop">
+											<option value="092-Saadah Collection">
+											<option value="093-SAKAL  Official Shop">
+											<option value="094-Sanjaya Book store 2">
+											<option value="095-Saturdays Lifestyle">
+											<option value="096-Scent Addict">
+											<option value="097-Shabani Official">
+											<option value="098-Sido Muncul Official Store">
+											<option value="099-Skinbeautyjktt">
+											<option value="100-Skincareehousee">
+											<option value="101-SPESIALIS STORE (RESMI)">
+											<option value="102-sugitoys">
+											<option value="103-Sundy Watch">
+											<option value="104-Supplier Kaos ID">
+											<option value="105-tageh store">
+											<option value="106-Tampofamily">
+											<option value="107-TBTRajo Online">
+											<option value="108-Timely.ID">
+											<option value="109-Tina colletion">
+											<option value="110-Tokaed Official Shop">
+											<option value="111-Toko kebaya online">
+											<option value="112-Toko Sprei Momo">
+											<option value="113-Tokoharky">
+											<option value="114-Tokokebayaonline">
+											<option value="115-UMI SHOPPING">
+											<option value="116-Vanessa toys">
+											<option value="117-Vape WareHouse">
+											<option value="118-venomousplague">
+											<option value="119-VICLOOK Official Store">
+											<option value="120-Virgo_Beauty_Shop">
+											<option value="121-WAFAM TOKO ALAT CUKUR RAMBUT">
+											<option value="122-Waiwai Clutch Official Shop">
+											<option value="123-Watch Expert">
+											<option value="124-WATCHMESTORE">
+											<option value="125-WULAN BINTANG SHOP">
+											<option value="126-YD_Store99">
+											<option value="127-YUALSTORE">
+											<option value="128-YUNNA_SSTORE">
+											<option value="129-zoeyden cast">
+											<option value="130-Zumee Thrift Store">
+										</datalist>  
+								</div>	
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="email">Layanan</label>
+									<select id="layanan" class="form-select" aria-label="Default select example" name="layanan" required>
+                                        <option selected>--Please Select--</option>
+                                        <option value="1">ECO</option>
+                                        <option value="2">EZ</option>
+									</select>
+								</div>
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="email">Pembayaran</label>
+									<select id="pembayaran" class="form-select" aria-label="Default select example" name="pembayaran" required>
+                                        <option selected>--Please Select--</option>
+                                        <option value="1">PP_PM</option>
+                                        <option value="2">PP_CASH</option>
+										<option value="3">CC_CASH</option>
+									</select>
+								</div>
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="email">Sumber</label>
+									<select id="sumber" class="form-select" aria-label="Default select example" name="sumber" required>
+                                        <option selected>--Please Select--</option>
+                                        <option value="1">AKULAKUOB</option>
+                                        <option value="2">BUKAEXPRESS</option>
+										<option value="3">BUKALAPAK</option>
+										<option value="4">E3</option>
+										<option value="5">LAZADA</option>
+										<option value="6">MAGELLAN</option>
+										<option value="7">SHOPEE</option>
+									</select>
+								</div>
+
+								<div class="mb-3">
+									<label class="mb-2 text-muted" for="email">Biaya</label>
+									<input type="text" id="biaya" name="biaya" class="form-control" min="1000" 
+										max="1000000" style="width:250px;" 
+										placeholder="1.000 - 1.000.000" required/>							
+								</div>
+		
+								<div class="d-flex align-items-center">
+										<button type="submit" align="center" onclick="return confirm('Apakah Anda Yakin ?')" class="btn btn-success ms-auto">
+											Predict Package Delivery
+										</button>
+								</div>
+							</form>
+                            <div class="text-center mt-5 text-muted">
+                               <h3>{{ prediction_text }}<h3>
+                            </div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/login.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+	/* Dengan Rupiah */
+    var dengan_rupiah = document.getElementById('biaya');
+    dengan_rupiah.addEventListener('keyup', function(e)
+    {
+        dengan_rupiah.value = formatRupiah(this.value, 'Rp. ');
+    });
+    
+    /* Fungsi */
+    function formatRupiah(angka, prefix)
+    {
+        var number_string = angka.replace(/[^,\d]/g, '').toString(),
+            split    = number_string.split(','),
+            sisa     = split[0].length % 3,
+            rupiah     = split[0].substr(0, sisa),
+            ribuan     = split[0].substr(sisa).match(/\d{3}/gi);
+            
+        if (ribuan) {
+            separator = sisa ? '.' : '';
+            rupiah += separator + ribuan.join('.');
+        }
+        
+        rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+        return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+    }
+</script>
+{% endblock %}
